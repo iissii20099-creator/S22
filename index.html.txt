@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>جاري الدخول</title>
+<title>جاري التحويل</title>
 
 <style>
 body{
@@ -13,60 +13,20 @@ body{
   justify-content:center;
   align-items:center;
   background:#0f0f0f;
-  font-family: Arial, sans-serif;
   color:white;
-}
-
-.box{
-  text-align:center;
-}
-
-button{
-  margin-top:20px;
-  padding:12px 25px;
-  border:none;
-  border-radius:8px;
-  background:#00c2ff;
-  font-size:16px;
-  font-weight:bold;
-  cursor:pointer;
-}
-
-button:hover{
-  background:#00a3d6;
+  font-family: Arial, sans-serif;
 }
 </style>
 
 <script>
-let seconds = 3;
-
-function startRedirect(){
-  let interval = setInterval(() => {
-    seconds--;
-    document.getElementById("count").innerText = seconds;
-
-    if(seconds <= 0){
-      clearInterval(interval);
-      window.location.href = "https://trading-goals-zfih.arcada.app/";
-    }
-  }, 1000);
-}
-
-function manual(){
-  window.location.href = "https://trading-goals-zfih.arcada.app/";
+window.onload = function(){
+  window.location.href = "https://trading-goals-zfih.arcada.app/?data=W3siaWQiOiIzM2Q1MzhiMS02ZjllLTQwMjctODA1Ni00NDk5YjYzMDhjZDEiLCJzZXF1ZW5jZSI6MSwibWFya2V0IjoidXMiLCJjb21wYW55TmFtZSI6Ik1TVFIiLCJjb250cmFjdFR5cGUiOiJQIiwic3RyaWtlUHJpY2UiOjE4NSwiZW50cnlQcmljZSI6My42NCwiaGlnaGVzdFByaWNlIjoxOC4zLCJzdGF0dXMiOiJ3b25fcGVuZGluZyIsIm5vdGVzIjoiIiwiZGF0ZSI6IjIwMjYtMDUtMDUiLCJhY2hpZXZlZFBlcmNlbnQiOjQwMi43NDcyNTI3NDcyNTI3MywiaXNIZXJvIjpmYWxzZX0seyJpZCI6ImQwM2M1YTM0LWQzNmQtNDMyMi04N2ZkLTE0MGQ1ZTAxMmE0ZiIsInNlcXVlbmNlIjoyLCJtYXJrZXQiOiJ1cyIsImNvbXBhbnlOYW1lIjoiTlhQSSIsImNvbnRyYWN0VHlwZSI6IkMiLCJzdHJpa2VQcmlrZSI6MjgwLCJlbnRyeVByaWNlIjozLCJoaWdoZXN0UHJpY2UiIjoyNiwi... (يكمل نفس الرابط كامل هنا) ";
 }
 </script>
 
 </head>
 
-<body onload="startRedirect()">
-
-<div class="box">
-  <h2>جاري تحويلك للموقع</h2>
-  <p>سيتم التحويل خلال <span id="count">3</span> ثواني</p>
-
-  <button onclick="manual()">دخول الآن</button>
-</div>
-
+<body>
+<p>جاري فتح الصفحة...</p>
 </body>
 </html>
